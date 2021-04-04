@@ -577,7 +577,7 @@ a {
               <table border="0" cellpadding="0" cellspacing="0">
                 <tr>
                   <td class="align-center">
-                    <a href="http://htmlemail.io" target="_blank"><img src="https://drive.google.com/uc?id=1v-ZTx3yjs6Jb2ofDGcKZ3L6DhhQ-dqhR" width="411" height="287" alt="Logo" align="center"></a>
+                    <a href="http://groom.bythekc.com" target="_blank"><img src="https://drive.google.com/uc?id=1v-ZTx3yjs6Jb2ofDGcKZ3L6DhhQ-dqhR" width="411" height="287" alt="GROOM" align="center"></a>
                   </td>
                 </tr>
               </table>
@@ -593,19 +593,21 @@ a {
                     <tr>
                       <td>
                         <h1>Thanks for choosing GROOM!</h1>
-                      <table border="0" cellpadding="0" cellspacing="0">
-                        <td>&nbsp;</td>
-                        <td class="receipt-container">
-                          <p class="align-left">
-                          We really appreciate your business, and hope that your grooming experience with us was exceptional in every way!
-                          <br><br>
-                          {{smalltalk}}
-                          <br><br> 
-                          Now that we've gotten to know your pups a little better, your offical quote for future appointments will be:
-                          </p>
-                        </td>
-                        <td>&nbsp;</td>
-                      </table>
+                        <table border="0" cellpadding="0" cellspacing="0">
+                          <td>&nbsp;</td>
+                          <td class="receipt-container">
+                            <p class="align-left">
+                            We really appreciate your business, and hope that your grooming experience with us was exceptional in every way!
+                            <br><br>
+                            {{smalltalk}}
+                            <br><br> 
+                            I would reccomend we make another appointment in {{recs.weeks}} weeks. {{recs.additional}}
+                            <br><br>
+                            Now that we've gotten to know your pups a little better, your offical estimate for future appointments will be:
+                            </p>
+                          </td>
+                          <td>&nbsp;</td>
+                        </table>
                         <table border="0" cellpadding="0" cellspacing="0">
                           <tr>
                             <td>&nbsp;</td>
@@ -613,7 +615,7 @@ a {
                               <table class="receipt" border="0" cellpadding="0" cellspacing="0">
                                 {{#each dogs}}
                                 <tr>
-                                  <td>{{name}} - All Inclusive Groom - ({{hours}} hrs x $115/hr)</td>
+                                  <td>{{name}} - {{service}} - ({{hours}} hrs x $115/hr)</td>
                                   <td class="receipt-figure">{{fee}}</td>
                                 </tr>
                                 {{/each}}
@@ -636,16 +638,32 @@ a {
                             <td>&nbsp;</td>
                           </tr>
                         </table>
-                          
-                  <table border="0" cellpadding="0" cellspacing="0">
-                    <td>&nbsp;</td>
-                      <td class="receipt-container">
-                        <p class="align-left">
-                          Overall I would love to get you in every {{recs.weeks}} weeks. {{recs.additional}}
-                        </p>
-                      </td>
-                      <td>&nbsp;</td>
-                  </table>
+                        <table border="0" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td>&nbsp;</td>
+                            <!-- START TAIL PARAGRAPHS -->
+                            <!-- {{#each tail.paragraphs}} -->
+                              <td class="receipt-container">
+                                <p class="align-left">
+                                  {{contents}}
+                                </p>
+                              </td>
+                            <!-- {{/each}} -->
+                            <!-- END TAIL PARAGRAPHS -->
+                            <td>&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td>&nbsp;</td>
+                            <!-- START PUPPY PICS -->
+                            <!-- {{#each tail.images}} -->
+                            <td class="align-center">
+                              <a href={link} target="_blank"><img src={link} width="411" height="287" alt="Puppy Pic!" align="center"></a>
+                            </td>
+                            <!-- {{/each}} -->
+                            <!-- END PUPPY PICS -->
+                            <td>&nbsp;</td>
+                          </tr>
+                        </table>
                       </td>
                     </tr>
                   </table>
