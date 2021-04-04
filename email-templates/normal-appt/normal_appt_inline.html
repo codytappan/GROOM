@@ -183,21 +183,21 @@
                     <tr>
                       <td style="font-family: Helvetica, sans-serif; font-size: 14px; vertical-align: top;" valign="top">
                         <h1 style="color: #222222; font-family: Helvetica, sans-serif; line-height: 1.4; margin: 0; font-size: 32px; font-weight: bold; margin-bottom: 24px; background: #31C0C2; border: 2px solid #000000; border-radius: 4px; box-sizing: border-box; text-align: center; text-transform: capitalize;">Thanks for choosing GROOM!</h1>
-                      <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;" width="100%">
-                        <td style="font-family: Helvetica, sans-serif; font-size: 14px; vertical-align: top;" valign="top">&nbsp;</td>
-                        <td class="receipt-container" style="font-family: Helvetica, sans-serif; font-size: 14px; vertical-align: top; width: 80%;" width="80%" valign="top">
-                          <p class="align-left" style="font-family: Helvetica, sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 16px; text-align: left;">
-                          It was really great working with you again! As always we hope that your grooming experience with us was exceptional in every way!
-                          <br><br>
-                          {{smalltalk}}
-                          <br><br> 
-                          I would reccomend we make another appointment in {{recs.weeks}} weeks. {{recs.additional}}
-                          <br><br>
-                          Your offical estimate for the next appointment would be:
-                          </p>
-                        </td>
-                        <td style="font-family: Helvetica, sans-serif; font-size: 14px; vertical-align: top;" valign="top">&nbsp;</td>
-                      </table>
+                        <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;" width="100%">
+                          <td style="font-family: Helvetica, sans-serif; font-size: 14px; vertical-align: top;" valign="top">&nbsp;</td>
+                          <td class="receipt-container" style="font-family: Helvetica, sans-serif; font-size: 14px; vertical-align: top; width: 80%;" width="80%" valign="top">
+                            <p class="align-left" style="font-family: Helvetica, sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 16px; text-align: left;">
+                            It was really great working with you again! As always we hope that your grooming experience with us was exceptional in every way!
+                            <br><br>
+                            {{smalltalk}}
+                            <br><br> 
+                            I would reccomend we make another appointment in {{recs.weeks}} weeks. {{recs.additional}}
+                            <br><br>
+                            Your offical estimate for the next appointment would be:
+                            </p>
+                          </td>
+                          <td style="font-family: Helvetica, sans-serif; font-size: 14px; vertical-align: top;" valign="top">&nbsp;</td>
+                        </table>
                         <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;" width="100%">
                           <tr>
                             <td style="font-family: Helvetica, sans-serif; font-size: 14px; vertical-align: top;" valign="top">&nbsp;</td>
@@ -228,23 +228,32 @@
                             <td style="font-family: Helvetica, sans-serif; font-size: 14px; vertical-align: top;" valign="top">&nbsp;</td>
                           </tr>
                         </table>
-                          
-                  <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;" width="100%">
-                    <td style="font-family: Helvetica, sans-serif; font-size: 14px; vertical-align: top;" valign="top">&nbsp;</td>
-                      <td class="receipt-container" style="font-family: Helvetica, sans-serif; font-size: 14px; vertical-align: top; width: 80%;" width="80%" valign="top">
-                        <p class="align-left" style="font-family: Helvetica, sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 16px; text-align: left;">
-                          {{#each tail.paragraphs}}
-                          <br> {{contents}} <br>
-                          {{/each}}
-                          {{#each tail.images}}
-                          <td class="align-center" style="font-family: Helvetica, sans-serif; font-size: 14px; vertical-align: top; text-align: center;" valign="top" align="center">
-                            <a href="{link}" target="_blank" style="color: #3498db; text-decoration: underline;"><img src="{link}" width="411" height="287" alt="Puppy Pic!" align="center" style="border: none; -ms-interpolation-mode: bicubic; max-width: 100%;"></a>
-                          </td>
-                          {{/each}}
-                        </p>
-                      </td>
-                      <td style="font-family: Helvetica, sans-serif; font-size: 14px; vertical-align: top;" valign="top">&nbsp;</td>
-                  </table>
+                        <table border="0" cellpadding="0" cellspacing="0" style="border-collapse: separate; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;" width="100%">
+                          <tr>
+                            <td style="font-family: Helvetica, sans-serif; font-size: 14px; vertical-align: top;" valign="top">&nbsp;</td>
+                            <!-- START TAIL PARAGRAPHS -->
+                            <!-- {{#each tail.paragraphs}} -->
+                              <td class="receipt-container" style="font-family: Helvetica, sans-serif; font-size: 14px; vertical-align: top; width: 80%;" width="80%" valign="top">
+                                <p class="align-left" style="font-family: Helvetica, sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 16px; text-align: left;">
+                                  {{contents}}
+                                </p>
+                              </td>
+                            <!-- {{/each}} -->
+                            <!-- END TAIL PARAGRAPHS -->
+                            <td style="font-family: Helvetica, sans-serif; font-size: 14px; vertical-align: top;" valign="top">&nbsp;</td>
+                          </tr>
+                          <tr>
+                            <td style="font-family: Helvetica, sans-serif; font-size: 14px; vertical-align: top;" valign="top">&nbsp;</td>
+                            <!-- START PUPPY PICS -->
+                            <!-- {{#each tail.images}} -->
+                            <td class="align-center" style="font-family: Helvetica, sans-serif; font-size: 14px; vertical-align: top; text-align: center;" valign="top" align="center">
+                              <a href="{link}" target="_blank" style="color: #3498db; text-decoration: underline;"><img src="{link}" width="411" height="287" alt="Puppy Pic!" align="center" style="border: none; -ms-interpolation-mode: bicubic; max-width: 100%;"></a>
+                            </td>
+                            <!-- {{/each}} -->
+                            <!-- END PUPPY PICS -->
+                            <td style="font-family: Helvetica, sans-serif; font-size: 14px; vertical-align: top;" valign="top">&nbsp;</td>
+                          </tr>
+                        </table>
                       </td>
                     </tr>
                   </table>
