@@ -639,30 +639,30 @@ a {
                           </tr>
                         </table>
                         <table border="0" cellpadding="0" cellspacing="0">
+                          <!-- START TAIL PARAGRAPHS -->
+                          {{#each tail.paragraphs}}
                           <tr>
                             <td>&nbsp;</td>
-                            <!-- START TAIL PARAGRAPHS -->
-                            <!-- {{#each tail.paragraphs}} -->
                               <td class="receipt-container">
                                 <p class="align-left">
                                   {{contents}}
                                 </p>
                               </td>
-                            <!-- {{/each}} -->
-                            <!-- END TAIL PARAGRAPHS -->
                             <td>&nbsp;</td>
                           </tr>
+                          {{/each}}
+                          <!-- END TAIL PARAGRAPHS -->
+                          <!-- START PUPPY PICS -->
+                          {{#each tail.images}}
                           <tr>
                             <td>&nbsp;</td>
-                            <!-- START PUPPY PICS -->
-                            <!-- {{#each tail.images}} -->
                             <td class="align-center">
                               <a href={link} target="_blank"><img src={link} width="411" height="287" alt="Puppy Pic!" align="center"></a>
                             </td>
-                            <!-- {{/each}} -->
-                            <!-- END PUPPY PICS -->
                             <td>&nbsp;</td>
                           </tr>
+                          {{/each}}
+                          <!-- END PUPPY PICS -->
                         </table>
                       </td>
                     </tr>
