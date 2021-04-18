@@ -189,10 +189,20 @@
                             <p class="align-left" style="font-family: Helvetica, sans-serif; font-size: 14px; font-weight: normal; margin: 0; margin-bottom: 16px; text-align: left;">
                             It was really great working with you again! As always we hope that your grooming experience with us was exceptional in every way!
                             <br><br>
-                            {{smalltalk}}
-                            <br><br> 
-                            I would recommend we keep you on a regular grooming schedule with appointments every {{recs.weeks}} weeks. {{recs.additional}}
+                            <!-- START SMALLTALK PARAGRAPHS -->
+                            {{#each smalltalk.paragraphs}}
+                            {{contents}}
                             <br><br>
+                            {{/each}}
+                            <!-- END SMALLTALK PARAGRAPHS -->
+                            I would recommend we keep you on a regular grooming schedule with appointments every {{rec.weeks}} weeks.
+                            <br><br>
+                            <!-- START REC PARAGRAPHS -->
+                            {{#each rec.paragraphs}}
+                            {{contents}}
+                            <br><br>
+                            {{/each}}
+                            <!-- END REC PARAGRAPHS -->
                             Your offical estimate for the next appointment would be:
                             </p>
                           </td>

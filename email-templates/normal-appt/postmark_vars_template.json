@@ -1,0 +1,60 @@
+{
+	"smalltalk": {
+		"paragraphs": [
+			{
+				"contents": "Small talk 1"
+			},
+			{
+				"contents": "Small talk 2"
+			}
+		]
+	},
+	"rec": {
+	  "weeks": "4-99",
+          "followup_sentence": "Ideally May the 4th be with you",
+		"paragraphs": [
+			{
+				"contents": "Rec 1"
+			},
+			{
+				"contents": "Rec 2"
+			}
+		]
+	},
+	"dogs": [
+		{
+			"name": "name_Value",
+			"service": "service_Value",
+			"hours": "hours_Value",
+			"fee": "fee_Value"
+		}
+	],
+	"travel": {
+		"min": "min_Value",
+		"fee": "fee_Value"
+	},
+	"discounts": [
+		{
+			"name": "name_Value",
+			"reduction": "reduction_Value"
+		}
+	],
+	"client": {
+		"total": "total_Value"
+	},
+	"tail": {
+		"paragraphs": [
+			{
+				"contents": "tail 1"
+			},
+			{
+				"contents": "tail 2"
+			}
+		],
+		"images": [
+			{
+				"id": "id_Value"
+			}
+		]
+	}
+}
